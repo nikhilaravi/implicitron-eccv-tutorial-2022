@@ -1,0 +1,164 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140259768-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-140259768-2');
+  </script>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>Tutorial</title>
+
+  <link rel="stylesheet" href="./Tutorial_files/bootstrap.min.css">
+  <link href="./Tutorial_files/css" rel="stylesheet" type="text/css">
+  <link href="./Tutorial_files/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+  <div class="container">
+    <table border="0" align="center">
+      <tbody>
+        <tr>
+          <td width="680" align="center" valign="middle">
+            <h3>ECCV 2022 Tutorial on</h3>
+            <span class="title">Implicit Rendering for Novel View Synthesis using Implicitron and PyTorch3D</span>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="3" align="center">
+            <h3> Location: Israel D (120) <br><br> Monday, October 24 (half day), 2022 <br> </h3>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <br>
+    <p><img src="./Tutorial_files/hero.gif" height="400" align="middle"></p>
+    <br>
+    <p>
+      <!-- <img src="./Tutorial_files/slowfast_output.gif" height="190" align="middle">
+      <img src="./Tutorial_files/teaser_iccv19_2.jpg" height="190" align="middle"> -->
+
+  </div>
+
+  <br>
+
+  <div class="container">
+    <h2>Overview</h2>
+    <p align="justify">
+      In this tutorial, we propose a quick survey of the latest Novel View Synthesis Techniques for single-scene and
+      multiple-scene use cases, and then introduce a new framework, Implicitron, directly
+      available within the widely used open-source <a href="https://pytorch3d.org/">PyTorch3D</a> library. Implicitron
+      provides
+      abstractions
+      and implementations of common implicit representations and rendering components to allow for easy experimentation.
+      Implicitron makes it easy to evaluate variations and combinations of novel view synthesis methods within a common
+      codebase, without requiring significant expertise in either 3D computer vision or graphics, and often even without
+      the
+      need to change actual code!
+    </p>
+  </div>
+
+  <br>
+
+  <div class="container">
+    <h2>Schedule</h2>
+    <div class="schedule">
+      <p><span class="announce_date">09:00 - 09:05</span> <strong> Welcome and Tutorial Kick off</strong> - <em>Nikhila
+          Ravi</em> </p>
+      <p><span class="announce_date">09:05 - 10:05</span> <strong> Introduction to novel view synthesis </strong> -
+        <em>David Novotny</em>
+      </p>
+      <p>Review of existing methods for novel view synthesis that overfit to one scene (such as NeRF, SRN, IDR), and
+        those that
+        learn category priors and generate new views conditioned on one or few images (such as PixelNeRF, PiFu,
+        NerFormer). A
+        shared high-level terminology is introduced to describe the components of all these approaches.
+
+        We will include a brief description of recent research projects at FAIR (e.g. Common Objects in 3D) which have
+        been
+        enabled by Implicitron.</p>
+
+      <p><span class="announce_date">10:05 - 10:20</span> ☕ Coffee Break </p>
+      <p><span class="announce_date">10:20 - 11:05</span> <strong> Overview of the Implicitron framework</strong>
+        - <em>Roman Shapovalov</em> </p>
+      <p>
+        We go through the different components that make up a dataset and a model in Implicitron, matching these to the
+        introduced terminology, and how to combine them together and perform training.
+      </p>
+      <p><span class="announce_date">11:05 - 11:20</span> Break </p>
+      <p><span class="announce_date">11:20 - 12:20</span> <strong> Hands-on example</strong> -
+        <em>Jeremy Reizenstein</em>
+      </p>
+      <p>In this practical session, we will take a simple custom model as an example and train it with Implicitron and
+        PyTorch3D.
+        The audience will be encouraged to run the code live during the sessions.</p>
+      <p><span class="announce_date">12:20 - 12:25</span> <strong> Closing </strong> - <em>Nikhila
+          Ravi</em> </p>
+      <!-- <p><span class="announce_date">16:45 - 17:15</span> <strong> Video Recognition Codebase (<a href="https://www.dropbox.com/s/qzaybpmia35fuh7/ICCV19_PySlowFast_tutorial.pptx?dl=0">slides</a>)</strong> - <em>Haoqi Fan</em> </p> -->
+    </div>
+  </div>
+
+  <br>
+
+  <div class="container">
+    <h2>Organizers</h2>
+    <div>
+      <div class="instructor">
+        <a href="https://scholar.google.co.uk/citations?user=35Rk1bQAAAAJ&hl=en">
+          <div class="instructorphoto"><img src="./Tutorial_files/jeremy.jpg" id="jeremy"></div>
+          <div>Jeremy Resizenstein<br>FAIR</div>
+        </a>
+      </div>
+
+      <div class="instructor">
+        <a href="https://d-novotny.github.io/">
+          <div class="instructorphoto"><img src="./Tutorial_files/david.jpg" id="david"></div>
+          <div>David Novotny<br>FAIR</div>
+        </a>
+      </div>
+
+      <br>
+
+      <div class="instructor">
+        <a href="https://scholar.google.com/citations?user=icaQKyIAAAAJ&hl=en">
+          <div class="instructorphoto"><img src="./Tutorial_files/roman.jpg" id="roman">
+          </div>
+          <div>Roman Shapovalov<br>FAIR</div>
+        </a>
+      </div>
+
+      <div class="instructor">
+        <a href="http://nikhilaravi.com">
+          <div class="instructorphoto"><img src="./Tutorial_files/nikhila.jpg" id="nikhila"></div>
+          <div>Nikhila Ravi<br>FAIR</div>
+        </a>
+      </div>
+
+      <div class="instructor">
+        <a href="https://scholar.google.fr/citations?user=IJidh-UAAAAJ&hl=fr">
+          <div class="instructorphoto"><img src="./Tutorial_files/patrick.jpg" id="patrick"></div>
+          <div>Patrick Labatut<br>FAIR</div>
+        </a>
+      </div>
+    </div>
+    <p></p>
+  </div>
+
+  <br>
+
+  <div class="containersmall">
+    <p>Contact: <a href="mailto:reizenstein@fb.com">Jeremy Resizenstein</a></p>
+  </div>
+
+</body>
+
+</html>
